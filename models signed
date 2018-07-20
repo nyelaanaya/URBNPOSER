@@ -1,0 +1,113 @@
+!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+
+<!-- Sidebar/menu -->
+
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Models Signed</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="http://www.wilhelminakidsandteens.com/wp-content/uploads/2016/01/072.jpg" style="width:100%" onclick="onClick(this)" alt="Imani Sulivan">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.QdBNROmDeGXCeFe2_M6TrQHaLH&w=190&h=285&c=8&o=5&pid=1.7" style="width:100%" onclick="onClick(this)" alt="Ryan Ribeiro Castro">
+      <img src="https://s-i.huffpost.com/gen/3034280/thumbs/o-SUNG-JIN-PARK-900.jpg?7" style="width:100%" onclick="onClick(this)" alt="Kevin P. Valentine">
+   </div>
+
+   <div class="w3-quarter">
+      <img src="https://i.pinimg.com/236x/6d/af/ae/6dafae52dbe20b502a4fb54b7e8e8435--freckles-sprinkles.jpg" style="width:100%" onclick="onClick(this)" alt="Emiliano Montalvo Gamez">
+      <img src="http://cdn.urbangyal.com/wp-content/uploads/2015/11/Sacha-M%E2%80%99Baye.jpg" style="width:100%" onclick="onClick(this)" alt="Leroy Vernadeau">
+      <img src="https://i.pinimg.com/736x/42/af/d5/42afd55c886e332a875712fbcb92d0aa--hair-and-makeup-eye-makeup.jpg" style="width:100%" onclick="onClick(this)" alt="Fabia Feliciano Abreu">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://mediaslide-europe.storage.googleapis.com/metropolitan/pictures/4258/8612/large-1504708741-b44569655f97141832045f18ae859ae1.jpg" style="width:100%" onclick="onClick(this)" alt="Ngoli Chikwendu">
+      <img src="http://uschina.usc.edu/Files/images/201001/liuwenvogue2.jpg" style="width:100%" onclick="onClick(this)" alt="Linette Marcoux">
+      <img src="https://lh3.googleusercontent.com/-HKHFWOdVmaw/Wk03O1mOUjI/AAAAAAAEkcw/-jyU7L6_xLsMAfCbQ8vYbqZcxQK9WPcAACJoC/s530-p/Aiyana%2BA.%2BLewis%2Bby%2BZavier%2BDe%2527Angelo%2B%2528via%2B%2540zavierdeangelo%2529.jpg" style="width:100%" onclick="onClick(this)" alt="Ellie Mockridge">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://images.pexels.com/photos/999515/pexels-photo-999515.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%" onclick="onClick(this)" alt="Kimberly A. Leal">
+      <img src="http://www.modzik.com/wp-content/uploads/2018/03/Burberry-Heritage-Trench-Reimagined-photographed-by-Thurstan-Redding-styled-by-Victoire-Simonney.jpg" style="width:100%" onclick="onClick(this)" alt="Zarina Nekrasova">
+      <img src="https://ivyprosper.files.wordpress.com/2017/02/wp-1486936809464.jpg" style="width:100%" onclick="onClick(this)" alt="Maya Hyde">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
