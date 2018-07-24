@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;background-image:url("http://24.media.tumblr.com/tumblr_lifggho8Wz1qdgj5oo1_500.gif")
+}
+</style>
+
+
+<body class="w3-content" style="max-width:1200px">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="https://worldofwonder.net/wp-content/uploads/2018/06/Screen-Shot-2018-06-04-at-6.08.54-PM.png" alt="" style="width:100%">
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="modelssigned.html"><class="w3-bar-item w3-button">Models Signed</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Models on the rise <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-"><i class="fa fa-caret-right w3-margin-right"></i>Home Page</a>
+      <a href="#" class="w3-bar-item w3-button">Age</a>
+      <a href="#" class="w3-bar-item w3-button">Ethnicity</a>
+      <a href="#" class="w3-bar-item w3-button">Body Size</a>
+    </div>
+
+  </div>
+  <a href=""><class="w3-bar-item w3-button w3-padding">Profile</a>
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+      <img src="https://imgur.com/7nj0NCg.gif" alt="HTML5 Icon" width="800" height="428">
+    <p class="w3-right">
+
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="" style="width:100" "height:10">
+
+
+
+  <div class="w3-container w3-text-grey" id="Model Photos">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://sigalmodels.com/wp-content/uploads/profile-media/meredith-vancuyk/screen-shot-2018-06-25-at-11.05.44-am165448365433.png" style="width:100%">
+        <p>Meredith Vancuyk<br><b class="w3-text-white">7/14/18</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://pbs.twimg.com/media/C98zNDuVwAAAfuu.jpg" style="width:100%">
+        <p>Salem Mitchell<br><b class="w3-text-white">7/15/18</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://lh3.googleusercontent.com/JyEh0-pRKrEeUWdWmBQ3Bbp2Uf79x1rUPbgln_iFVNkAWldh2-HHTW-JKvFRbc1S16LuGfTqPKg2v2XQFQgahZlk2eCwC0knwzr0bmbDijZa9bQRcPgBGpEZlqNJAhhIoXKRUoPJgLd8b-9ha9-Oo0ZKxAb3uV2jqCLlCxtQW4rRUYGALcIISmQU6LhrgLiFtAWqDOFJ9q0tH-zlbctlRcNIpkoeMk_mU_jqDtQIpCA-NEcc6Boh_7qnk_B5pC5vSrSbEM2DA_MYnB7EFY1OO5D3onbt1FH75ILaFaWZfQ_jzzCbQle3jkDAL80s3fKc2teswztV5Jnw_vnVX3QCyZIih46OIG1kowzXEB0ZmmppIPDF9ZMpsg2TG366Qr7mBscYteEuKpPktCJalPu2CUS_0fT6FSPMLTBJe-5AgRyJSejvb2FVqL7SWuMLl9ppWnz-2LYP_nAOnCWeTIAIvW-j8Xjy9RHmD0LFLqhbDuwiifpieIJTukVOV7nh1jFbuTcJZu8_iomQY71h3uPZGpVOmXplAdPVSmXkyeT7cjSt7Zp_tLHOojhLrtawnX96D8iyLt9OWuSNfHWjbmq6rmTBJqmA7nrng4O-GLk=w750-h739-no" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New Model</span>
+          <div class="w3-display-middle w3-display-hover">
+
+          </div>
+        </div>
+        <p>Nyela Guthrie<br><b class="w3-text-white">7/12/18</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://menshairstylesclub.com/wp-content/uploads/2014/12/dreadlock-hairstyles-min.jpg" style="width:100%">
+        <p>Mark Wayne<br><b class="w3-text-white">7/16/18</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="http://ftape.com/media/wp-content/uploads/2017/11/francisco_lachowski_risbel_magazine-01.jpg" style="width:100%">
+        <p>Francisco Lachowski<br><b class="w3-text-white">7/9/18</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="http://imgur.com/QNWln.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Book Me</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Maseo Lopez<br><b class="w3-text-white">7/11/18</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="http://4.bp.blogspot.com/-OB9YDkfQpec/VSgn5raK1sI/AAAAAAAAH2Y/ImReK6qJ9bM/s1600/ellecanadamay15%2B(1).jpg" style="width:100%">
+        <p>Senait Gidey<br><b class="w3-text-white">7/17/18</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="http://4.bp.blogspot.com/-0LyQUxuaZ6w/Ve5VyWPxE7I/AAAAAAAAPAQ/15F8uM4TYok/s1600/hbnipponoct15%2B%25281%2529.jpg" style="width:100%">
+        <p>Aliza Chasity<br><b class="w3-text-white">7/10/18</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-container">
+    <img src="https://www.thefashionisto.com/wp-content/uploads/2014/10/GQ-Taiwan-Top-Asian-Male-Models-009-800x1032.jpg" style="width:28%">
+    <p>Edmond Lee<br><b class="w3-text-white">7/10/18</b></p>
+  </div>
+</div>
+
+  <!-- Subscribe section -->
+
+
+  <!-- Footer -->
+
+      </div>
+
+      <div class="w3-col s4">
+
+      </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+
+
+<script>
+// Accordion
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
